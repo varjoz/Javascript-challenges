@@ -13,7 +13,6 @@ function load() {
     }
     container.innerHTML = elemHTML;
 }
-
 load();
 
 // Tabla osszekeveres
@@ -23,7 +22,7 @@ function shuffleArray(tabla) {
         var temp = tabla[i];
         tabla[i] = tabla[j];
         tabla[j] = temp;
-    }
+    }                                        
     console.log(tabla);
 };
 
@@ -78,8 +77,6 @@ function csere(i) {
 
 // nyero allapot kideritese
 function checkWin() {
-    var winningState = false;
-    //
     var szamlalo = 0;
     for (var j = 0; j < tabla.length; j++) {
         if (tabla[j] == winning[j]) {
